@@ -55,4 +55,3 @@ def minOperations(n: int) -> int:
         return 0
 
     return next_operation(n, 2, 2, 1)
-    
