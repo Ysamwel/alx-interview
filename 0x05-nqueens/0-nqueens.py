@@ -1,18 +1,16 @@
 #!/usr/bin/python3
+'''a program that solves the N queens problem.'''
 import sys
 
 def is_safe(board, row, col, N):
-    # Check if there's a queen in the same column
     for i in range(row):
         if board[i] == col:
             return False
 
-    # Check if there's a queen on the upper-left diagonal
     for i, j in zip(range(row - 1, -1, -1), range(col - 1, -1, -1)):
         if board[i] == j:
             return False
 
-    # Check if there's a queen on the upper-right diagonal
     for i, j in zip(range(row - 1, -1, -1), range(col + 1, N)):
         if board[i] == j:
             return False
