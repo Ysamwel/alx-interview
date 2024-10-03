@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """prime numbers"""
 
+
 def isWinner(x, nums):
     """x - rounds
     nums - numbers list
